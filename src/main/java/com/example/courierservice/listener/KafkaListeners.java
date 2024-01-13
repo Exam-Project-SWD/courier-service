@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 public class KafkaListeners {
 
     @KafkaListener(topics = "ORDER_AVAILABLE", groupId = "order-available-id")
-    public void getAvailableOrder(String message) {
+    public void      getAvailableOrder(String message) {
         System.out.println(message);
     }
 }
